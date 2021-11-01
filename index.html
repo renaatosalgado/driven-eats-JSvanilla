@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <title>Driven Eats</title>
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <div class="place-name specialfont">DrivenEats</div>
+      <p class="slogan">Sua comida em 6 minutos</p>
+    </div>
+
+    <div class="content">
+      <div class="menu-options">
+        <div class="titles specialfont">Primeiro, seu prato</div>
+
+        <div class="main-course">
+          <!-- OPTION -->
+          <div
+            class="option"
+            onclick="mainSelection(this), checkIconMain('icon1'), finishOrder();"
+          >
+            <div class="image">
+              <img src="images/sandwich.jpeg" />
+            </div>
+            <div class="item-name">Lentilha Power 1</div>
+            <div class="item-description">Broto de alfafa e hamburguer</div>
+            <div class="item-price">R$ <span class="value">21,90</span></div>
+
+            <div class="check-icon" id="icon1">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+          <!-- OPTION -->
+
+          <!-- OPTION -->
+          <div
+            class="option"
+            onclick="mainSelection(this), checkIconMain('icon2'), finishOrder();"
+          >
+            <div class="image">
+              <img src="images/sandwich.jpeg" />
+            </div>
+            <div class="item-name">Lentilha Power 2</div>
+            <div class="item-description">Broto de alfafa e hamburguer</div>
+            <div class="item-price">R$ <span class="value">23,90</span></div>
+
+            <div class="check-icon" id="icon2">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+          <!-- OPTION -->
+
+          <!-- OPTION -->
+          <div
+            class="option"
+            onclick="mainSelection(this), checkIconMain('icon3'), finishOrder();"
+          >
+            <div class="image">
+              <img src="images/sandwich.jpeg" />
+            </div>
+            <div class="item-name">Lentilha Power 3</div>
+            <div class="item-description">Broto de alfafa e hamburguer</div>
+            <div class="item-price">R$ <span class="value">25,90</span></div>
+
+            <div class="check-icon" id="icon3">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+          <!-- OPTION -->
+        </div>
+        <!--Ends main course-->
+
+        <div class="titles specialfont">Agora, sua bebida</div>
+
+        <div class="drinks">
+          <!-- OPTION -->
+          <div
+            class="option"
+            onclick="drinkSelection(this), checkIconDrinks('icon4'), finishOrder();"
+          >
+            <div class="image">
+              <img src="images/kombucha.jpeg" />
+            </div>
+            <div class="item-name">Kombucha - 450 mL</div>
+            <div class="item-description">Laranja com morango</div>
+            <div class="item-price">R$ <span class="value">9,90</span></div>
+            <div class="check-icon" id="icon4">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+          <!-- OPTION -->
+
+          <!-- OPTION -->
+          <div
+            class="option"
+            onclick="drinkSelection(this), checkIconDrinks('icon5'), finishOrder();"
+          >
+            <div class="image">
+              <img src="images/kombucha.jpeg" />
+            </div>
+            <div class="item-name">Kombucha - 550 mL</div>
+            <div class="item-description">Cravo e canela</div>
+            <div class="item-price">R$ <span class="value">11,90</span></div>
+            <div class="check-icon" id="icon5">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+          <!-- OPTION -->
+
+          <!-- OPTION -->
+          <div
+            class="option"
+            onclick="drinkSelection(this), checkIconDrinks('icon6'), finishOrder();"
+          >
+            <div class="image">
+              <img src="images/kombucha.jpeg" />
+            </div>
+            <div class="item-name">Kombucha - 700 mL</div>
+            <div class="item-description">Abacaxi</div>
+            <div class="item-price">R$ <span class="value">13,90</span></div>
+            <div class="check-icon" id="icon6">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+          <!-- OPTION -->
+        </div>
+        <!--Ends drinks-->
+
+        <div class="titles specialfont">Por fim, sua sobremesa</div>
+
+        <div class="desserts">
+          <!-- OPTION -->
+          <div
+            class="option"
+            onclick="dessertSelection(this), checkIconDesserts('icon7'), finishOrder();"
+          >
+            <div class="image">
+              <img src="images/pie.jpeg" />
+            </div>
+            <div class="item-name">Torta Holandesa 1</div>
+            <div class="item-description">Creme branco e cobertura</div>
+            <div class="item-price">R$ <span class="value">7,90</span></div>
+            <div class="check-icon" id="icon7">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+          <!-- OPTION -->
+
+          <!-- OPTION -->
+          <div
+            class="option"
+            onclick="dessertSelection(this), checkIconDesserts('icon8'), finishOrder();"
+          >
+            <div class="image">
+              <img src="images/pie.jpeg" />
+            </div>
+            <div class="item-name">Torta Holandesa 2</div>
+            <div class="item-description">Creme branco e cobertura</div>
+            <div class="item-price">R$ <span class="value">9,90</span></div>
+            <div class="check-icon" id="icon8">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+          <!-- OPTION -->
+
+          <!-- OPTION -->
+          <div
+            class="option"
+            onclick="dessertSelection(this), checkIconDesserts('icon9'), finishOrder();"
+          >
+            <div class="image">
+              <img src="images/pie.jpeg" />
+            </div>
+            <div class="item-name">Torta Holandesa 3</div>
+            <div class="item-description">Creme branco e cobertura</div>
+            <div class="item-price">R$ <span class="value">10,90</span></div>
+            <div class="check-icon" id="icon9">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+          <!-- OPTION -->
+        </div>
+        <!--Ends desserts-->
+      </div>
+      <!--Ends menu-->
+    </div>
+    <!--Ends content-->
+
+    <div class="bottom-bar">
+      <div class="inactive-button">
+        <p>Selecione os 3 itens</p>
+
+        <p>para fechar o pedido</p>
+      </div>
+
+      <div class="active-button hide-class" onclick="sendMessage()">
+        <p>Fechar pedido</p>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
